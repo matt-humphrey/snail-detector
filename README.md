@@ -1,0 +1,2 @@
+# snail-detector
+Thesis project
