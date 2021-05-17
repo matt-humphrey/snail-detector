@@ -26,22 +26,15 @@ checkpoint = torch.load('models/s.1440.pt')['model']
 model.load_state_dict(checkpoint.state_dict())
 model = model.autoshape()
 
-# Set variables as shortcuts to different local folders
-dir = "C:/Users/mhump/Desktop/app/"
-dir_det = "C:/Users/mhump/Desktop/app/detection/"
-dir_pro = "C:/Users/mhump/Desktop/app/process/"
-dir_sta = "C:/Users/mhump/Desktop/app/static/"
-dir_map = "C:/Users/mhump/Desktop/app/maps/"
-
 # Google Static Maps API Key
-gmaps_api_key = "AIzaSyAVgK0ppFu8ntLOhyxeoKttQXjskv-rMqw"
+gmaps_api_key = "XXX" 
 
 # url variable store url
 url = "https://maps.googleapis.com/maps/api/staticmap?"
 
 # Information to access Cloudinary account if processing images via the cloud
 cloud_api_key = "359879132351349"
-api_secret = "6RYDzxtqtm8jfZrmjwCX9hqaaf8"
+api_secret = "XXX"
 cloud_name = "mhumphrey"
 
 results = cloudinary.api.resources(type="upload", max_results=30,
